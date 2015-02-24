@@ -9,7 +9,6 @@ public class RPG extends JavaPlugin
     public void onEnable() 
     {
     	getLogger().info("Plugin has started!");
-    	getServer().getPluginManager().registerEvents(new ExplosionPotion(), this);
     }
  
     @Override
