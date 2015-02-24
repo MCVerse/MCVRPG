@@ -3,8 +3,14 @@ package io.github.sircat.rpg;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class RPG extends JavaPlugin
+import com.sucy.skill.SkillAPI;
+import com.sucy.skill.api.SkillPlugin;
+
+public class RPG extends JavaPlugin implements SkillPlugin
 {
+	@SuppressWarnings("unused")
+	private SkillAPI skillAPI;
+	
     @Override
     public void onEnable() 
     {
@@ -16,4 +22,20 @@ public class RPG extends JavaPlugin
     {
         getLogger().info("Plugin has been disabled!");
     }
+
+	@Override
+	public void registerClasses(SkillAPI skillAPI) 
+	{
+		this.skillAPI = new SkillAPI();
+		
+	}
+
+	@Override
+	public void registerSkills(SkillAPI skillAPI) 
+	{
+		
+		
+	}
+    
+    
 }

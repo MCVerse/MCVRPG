@@ -33,7 +33,11 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="E:/Library/Documents/GitHub/Plugins/SQLibrary-7.1.jar"/>
-	<classpathentry kind="lib" path="E:/Library/Documents/GitHub/Plugins/SkillAPI.jar"/>
+	<classpathentry kind="lib" path="E:/Library/Documents/GitHub/Plugins/SkillAPI.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="http://zephyr-games.de/docs/enchantmentapi/SkillAPI/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="E:/Library/Documents/GitHub/Plugins/MCCore.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
 		<attributes>
