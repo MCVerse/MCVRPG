@@ -27,7 +27,11 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="E:/Library/Documents/GitHub/Plugins/spigot-1.8-R0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="E:/Library/Documents/GitHub/Plugins/spigot-1.8-R0.1-SNAPSHOT.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://hub.spigotmc.org/javadocs/spigot/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="E:/Library/Documents/GitHub/Plugins/SQLibrary-7.1.jar"/>
 	<classpathentry kind="lib" path="E:/Library/Documents/GitHub/Plugins/SkillAPI.jar"/>
 	<classpathentry kind="lib" path="E:/Library/Documents/GitHub/Plugins/MCCore.jar"/>
