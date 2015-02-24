@@ -1,7 +1,5 @@
 package io.github.sircat.rpg;
 
-import io.github.sircat.skills.ExplosionPotion;
-
 
 import org.bukkit.plugin.java.JavaPlugin;
 
