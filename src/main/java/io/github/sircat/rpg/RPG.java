@@ -2,7 +2,7 @@ package io.github.sircat.rpg;
 
 import io.github.sircat.skills.ExplosionPotion;
 
-import org.bukkit.Bukkit;
+
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class RPG extends JavaPlugin
@@ -11,7 +11,7 @@ public class RPG extends JavaPlugin
     public void onEnable() 
     {
     	getLogger().info("Plugin has started!");
-    	Bukkit.getServer().getPluginManager().registerEvents(new ExplosionPotion(), this);
+    	getServer().getPluginManager().registerEvents(new ExplosionPotion(), this);
     }
  
     @Override
