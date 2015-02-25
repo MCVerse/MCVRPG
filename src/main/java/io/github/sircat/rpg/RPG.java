@@ -14,13 +14,13 @@ public class RPG extends JavaPlugin implements SkillPlugin
     @Override
     public void onEnable() 
     {
-    	getLogger().info("Plugin has started!");
+    	getLogger().info("[MCVRPG] Plugin enabled!");
     }
  
     @Override
     public void onDisable() 
     {
-        getLogger().info("Plugin has been disabled!");
+        getLogger().info("[MCVRPG] Plugin diabled!");
     }
 
     @Override
