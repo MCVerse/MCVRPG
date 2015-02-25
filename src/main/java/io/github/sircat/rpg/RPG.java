@@ -20,13 +20,14 @@ public class RPG extends JavaPlugin implements SkillPlugin
     @Override
     public void onDisable() 
     {
-        getLogger().info("[MCVRPG] Plugin diabled!");
+        getLogger().info("[MCVRPG] Back to serious mode");
     }
 
     @Override
 	public void registerClasses(SkillAPI api) 
 	{
 		api.addClasses(RPGClass("Fighter"));
+		api.addClasses(RPGClass("Defender"));
 		
 	}
 
