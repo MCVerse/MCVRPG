@@ -1,14 +1,15 @@
 package io.github.sircat.classes;
 
-import com.sucy.skill.api.CustomClass;
-import net.md_5.bungee.api.ChatColor;
+import net.minecraft.server.v1_8_R1.ItemStack;
 
-public class Fighter extends CustomClass
+import com.sucy.skill.api.classes.RPGClass;
+
+public class Fighter extends RPGClass
 {
 	public static String NAME = "Fighter";
 	
-	public Fighter()
+	public Fighter(String name, ItemStack icon, int maxLevel, String parent)
 	{
-		super(NAME, null, ChatColor.GRAY + NAME, 30, 30);
+		super(NAME, null, 30, null);
 	}
 }
