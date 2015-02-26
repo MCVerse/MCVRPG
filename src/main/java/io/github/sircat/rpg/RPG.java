@@ -1,7 +1,5 @@
 package io.github.sircat.rpg;
 
-import io.github.sircat.classes.Fighter;
-
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.sucy.skill.SkillAPI;
@@ -11,7 +9,9 @@ import com.sucy.skill.api.classes.RPGClass;
 public class RPG extends JavaPlugin implements SkillPlugin
 {
 	
-    @Override
+    private SkillAPI api;
+
+	@Override
     public void onEnable() 
     {
     	getLogger().info("[MCVRPG] Plugin enabled!");
@@ -26,9 +26,15 @@ public class RPG extends JavaPlugin implements SkillPlugin
     @Override
 	public void registerClasses(SkillAPI api) 
 	{
+    	this.api = new SkillAPI();
 		api.addClasses(RPGClass("Fighter"));
-		api.addClasses(RPGClass("Defender"));
+		api.addClasses(RPGClass("defense"));
 		
+	}
+
+	private RPGClass RPGClass(String string) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
