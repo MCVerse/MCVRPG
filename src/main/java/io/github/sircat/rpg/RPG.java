@@ -1,6 +1,7 @@
 package io.github.sircat.rpg;
 
 import io.github.sircat.classes.Fighter;
+import io.github.sircat.classes.bomber;
 import io.github.sircat.classes.defense;
 
 import org.bukkit.plugin.java.JavaPlugin;
@@ -25,7 +26,7 @@ public class RPG extends JavaPlugin implements SkillPlugin
     @Override
 	public void registerClasses(SkillAPI api) 
 	{
-		api.addClasses(new Fighter(), new defense());
+		api.addClasses(new Fighter(), new defense(), new bomber());
 		
 	}
 
