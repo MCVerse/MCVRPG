@@ -1,8 +1,8 @@
 package io.github.sircat.rpg;
 
-import io.github.sircat.classes.Fighter;
-import io.github.sircat.classes.bomber;
-import io.github.sircat.classes.defense;
+import io.github.sircat.classes.tier1.Fighter;
+import io.github.sircat.classes.tier1.bomber;
+import io.github.sircat.classes.tier1.defense;
 
 import org.bukkit.plugin.java.JavaPlugin;
 

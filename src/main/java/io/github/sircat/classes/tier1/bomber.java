@@ -1,4 +1,4 @@
-package io.github.sircat.classes;
+package io.github.sircat.classes.tier1;
 
 import com.sucy.skill.api.classes.RPGClass;
 
