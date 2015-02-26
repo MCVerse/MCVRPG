@@ -1,16 +1,15 @@
 package io.github.sircat.rpg;
 
+import io.github.sircat.classes.Fighter;
+import io.github.sircat.classes.defense;
+
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.sucy.skill.SkillAPI;
 import com.sucy.skill.api.SkillPlugin;
-import com.sucy.skill.api.classes.RPGClass;
 
 public class RPG extends JavaPlugin implements SkillPlugin
 {
-	
-    private SkillAPI api;
-
 	@Override
     public void onEnable() 
     {
@@ -26,15 +25,8 @@ public class RPG extends JavaPlugin implements SkillPlugin
     @Override
 	public void registerClasses(SkillAPI api) 
 	{
-    	this.api = new SkillAPI();
-		api.addClasses(RPGClass("Fighter"));
-		api.addClasses(RPGClass("defense"));
+		api.addClasses(new Fighter(), new defense());
 		
-	}
-
-	private RPGClass RPGClass(String string) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	@Override

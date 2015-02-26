@@ -1,3 +1,4 @@
 name: MCVRPG
 main: io.github.sircat.rpg.RPG
 version: 0.0.1-SNAPSHOT
+depend: [SkillAPI]
