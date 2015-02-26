@@ -4,6 +4,7 @@ import io.github.sircat.classes.tier1.Bomber;
 import io.github.sircat.classes.tier1.Defence;
 import io.github.sircat.classes.tier1.Fighter;
 import io.github.sircat.classes.tier1.Recon;
+import io.github.sircat.classes.tier2.Fighter2;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -26,19 +27,19 @@ public class RPG extends JavaPlugin implements SkillPlugin
 	@Override
     public void onEnable() 
     {
-    	getLogger().info(ANSI_BOLD + ANSI_BLUE + "[MCVRPG]" + ANSI_RESET + ANSI_GREEN + "Plugin enabled! Oh boy, oh boy, fun fun fun");
+    	getLogger().info(ANSI_BLUE + "Plugin enabled!" + ANSI_RESET);
     }
  
     @Override
     public void onDisable() 
     {
-        getLogger().info(ANSI_BOLD + ANSI_BLUE + "[MCVRPG]" + ANSI_RESET + ANSI_RED + "Back to serious mode");
+        getLogger().info(ANSI_BLUE + "Back to serious mode" + ANSI_RESET);
     }
 
     @Override
 	public void registerClasses(SkillAPI api) 
 	{
-		api.addClasses(new Fighter(), new Defence(), new Bomber(), new Recon());
+		api.addClasses(new Fighter(), new Defence(), new Bomber(), new Recon(), new Fighter2());
 		
 	}
 
