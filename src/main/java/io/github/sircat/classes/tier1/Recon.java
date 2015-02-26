@@ -2,12 +2,12 @@ package io.github.sircat.classes.tier1;
 
 import com.sucy.skill.api.classes.RPGClass;
 
-public class bomber extends RPGClass
+public class Recon extends RPGClass
 {
-	public static String NAME = "bomber";
+	public static String NAME = "Recon";
 	
-	public bomber()
+	public Recon() 
 	{
 		super(NAME, null, 30, null);
-	}
+	}	
 }
